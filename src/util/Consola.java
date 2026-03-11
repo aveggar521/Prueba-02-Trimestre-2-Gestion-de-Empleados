@@ -2,36 +2,53 @@ package util;
 
 import java.util.Scanner;
 
-public class Consola {
+public class Consola implements IEntradaSalida {
   private Object sc;
 
   public Consola() {
     this.sc = new Scanner(System.in);
   }
 
+  @Override
   public void imprimir(String texto) {
     System.out.print(texto);
   }
 
-  public void escribirLinea(String texto) {
+  @Override
+  public void imprimirLinea(String texto) {
     System.out.println(texto);
   }
 
+  @Override
   public String leerTexto(String mensaje) {
-    return mensaje;
+    return null;
+  }
+
+  @Override
+  public int leerEntero(String mensaje) {
+
+    return 0;
+  }
+
+  @Override
+  public double leerImporte(String mensaje) {
+    // TODO Auto-generated method stub
+    return 0;
+  }
+
+  @Override
+  public void mostrarMenu() {
 
   }
 
-  private void cleanInput() {
+  @Override
+  public void limpiarPantalla() {
 
   }
 
-  public int leerEntero(int entero) {
-    return entero;
-  }
+  @Override
+  public void pausa() {
 
-  public double leerImporte(double importe) {
-    return importe;
   }
 
 }

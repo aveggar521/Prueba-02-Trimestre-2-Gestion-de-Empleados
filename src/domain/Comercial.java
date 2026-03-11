@@ -11,7 +11,7 @@ public class Comercial extends Empleado {
     this.ventas = ventas;
   }
 
-//  public double GetSueldo() {
-//    return this.sueldoBase;
-//  }
+  public double GetSueldo(double sueldoBase) {
+    return sueldoBase + (ventas * 1.10);
+  }
 }

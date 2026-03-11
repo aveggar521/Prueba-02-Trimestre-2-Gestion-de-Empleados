@@ -1,10 +1,12 @@
 package app;
 
+import util.Consola;
+
 public class Main {
 
   public static void main(String[] args) {
-    // TODO Auto-generated method stub
-
+    Consola consola = new Consola();
+    GestorEmpleados gestor = new GestorEmpleados();
   }
 
 }

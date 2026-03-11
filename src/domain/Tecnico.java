@@ -8,8 +8,8 @@ public class Tecnico extends Empleado {
     this.categoria = categoria;
   }
 
-//  public double GetSueldo() {
-//    return this.sueldoBase;
-//  }
+  public double GetSueldo(double sueldoBase) {
+    return sueldoBase + (categoria * 2);
+  }
 
 }

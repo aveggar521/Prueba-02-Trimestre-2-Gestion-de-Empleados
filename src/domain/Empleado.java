@@ -33,12 +33,7 @@ public abstract class Empleado {
     this.sueldoBase = sueldoBase;
   }
 
-//  @Override
-//  public String toString() {
-//    return String.format("%s: %s", dni, nombre);
-//  }
-
-//  public double abstract getSueldo() {
+//  public abstract double getSueldo() {
 //    
 //  }
 }
