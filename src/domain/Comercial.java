@@ -1,5 +1,17 @@
 package domain;
 
-public class Comercial {
+public class Comercial extends Empleado {
+  private double ventas;
 
+  public Comercial(String dni, String nombre, String apellidos, double sueldoBase) {
+    super(dni, apellidos, apellidos, sueldoBase);
+  }
+
+  public void setVentas(double ventas) {
+    this.ventas = ventas;
+  }
+
+//  public double GetSueldo() {
+//    return this.sueldoBase;
+//  }
 }
